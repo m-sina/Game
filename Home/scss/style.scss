@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// start nav
+header{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(31, 31, 31);
+}
+nav{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    background-color: rgb(31, 31, 31);
+    justify-content: space-between;
+    padding: 0 80px;
+    align-items: center;
+    img{
+        width: 108px;
+        height: 67px;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        i{
+            background-color: rgba(0, 0, 0, 0.506);
+            color: #A576D6;
+            border-radius: 50%;
+            padding: 2px;
+        }
+        li a{
+            text-decoration: none;
+            color: rgb(238, 238, 238);
+
+        }
+    }
+}
+#menu-icon{
+    color: white;
+    font-size: 2em;
+    display: none;
+}
+.show-under-menu {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+#under-menu {
+    width: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transition: all 0.5s;
+    left: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.874);
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    ul{
+        flex-direction: column;
+        display: flex;
+        position: relative;
+        list-style: none;
+        gap: 20px;
+        i{
+            font-size: 2em;
+            color: white;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+// end nav
+// start responsive
+@media screen and (max-width: 800px) {
+    nav{
+        width: 100%;
+        height: 90px;
+        display: flex;
+        background-color: rgb(31, 31, 31);
+        justify-content: space-between;
+        padding: 0 30px;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 500px) {
+    nav ul{
+        display: none;
+    }
+    #menu-icon{
+        display: block;
+    }
+    #under-menu {
+        width: 50%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        transition: all 0.5s;
+        left: 0;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.874);
+        margin-top: 5px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
+}
+// end responsive
