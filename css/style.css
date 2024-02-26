@@ -6,6 +6,7 @@
 
 body {
   background-color: #101820;
+  height: 500vh;
 }
 
 header {
@@ -314,6 +315,32 @@ h1 {
   background-color: rgba(24, 24, 24, 0.7529411765);
   border-radius: 32px;
   padding: 4px 120px;
+}
+
+#games {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  margin-top: 64px;
+}
+#games .game {
+  width: 390px;
+  height: 370px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+#games .game img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tag-game {
+  color: white;
+  margin-top: 121px;
+  padding-left: 264px;
 }
 
 @media screen and (max-width: 800px) {

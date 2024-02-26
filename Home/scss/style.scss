@@ -5,6 +5,7 @@
 }
 body{
     background-color: #101820;
+    height: 500vh;
 }
 // start nav
 header{
@@ -319,6 +320,33 @@ h1 {
     }
 }
 // end company
+
+// start games
+#games{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin-top: 64px;
+    .game{
+        width: 390px;
+        height: 370px;
+        border-radius: 18px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.tag-game{
+    color: white;
+    margin-top: 121px;
+    padding-left: 264px;
+}
+// end games
 
 // start responsive
 @media screen and (max-width: 800px) {
