@@ -146,6 +146,29 @@ nav ul li a {
   transform: translateY(-2%);
 }
 
+#platforms {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 48px;
+  flex-wrap: wrap;
+  padding: 0 90px;
+}
+#platforms .platform-items {
+  margin-top: 10px;
+  width: 300px;
+  height: 127px;
+  border-radius: 9px;
+  background-color: #AF7CE2;
+  position: relative;
+}
+#platforms .platform-items h3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @media screen and (max-width: 800px) {
   nav {
     width: 100%;
