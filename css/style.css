@@ -221,7 +221,7 @@ h1 {
 }
 .main-company-section h2 {
   color: white;
-  padding: 0 187px;
+  text-align: center;
   margin-bottom: 33px;
 }
 .main-company-section .top-company-section {
@@ -339,26 +339,18 @@ h1 {
 .tag-game {
   color: white;
   margin-top: 121px;
-  padding-left: 264px;
+  text-align: center;
 }
 
 .top-footer {
   display: flex;
   padding: 0 98px;
   flex-wrap: wrap;
+  margin-bottom: 70px;
 }
 
 .left-div {
   margin-right: 50px;
-}
-
-.social-media {
-  display: flex;
-  padding: 96px;
-}
-
-.social {
-  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 800px) {
@@ -393,6 +385,25 @@ h1 {
     margin-top: 5px;
     padding-left: 10px;
     padding-bottom: 5px;
+  }
+  #games {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin-top: 64px;
+  }
+  #games .game {
+    width: 300px;
+    height: 280px;
+    border-radius: 18px;
+    overflow: hidden;
+  }
+  #games .game img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 @media screen and (max-width: 1570px) {
@@ -469,6 +480,14 @@ h1 {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+  }
+  .top-footer {
+    display: flex;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+  .left-div {
+    margin-right: 20px;
   }
 }
 @media screen and (max-width: 970px) {
